@@ -3,221 +3,290 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    background: #f5f9ff;
-    color: #26364a;
+    font-family: 'Kanit', sans-serif;
+    background: #FFFCF8;
+    color: #51454A;
+    line-height: 1.8;
 }
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 15px 10%;
     background: white;
-    box-shadow: 0 2px 15px #dce7f5;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+    border-bottom: 1px solid #F3E6E8;
 }
 
 .logo {
     font-size: 25px;
-    font-weight: 700;
-    color: #3685d8;
+    font-weight: 600;
+    color: #CF7E99;
 }
 
-.navbar ul {
+.logo span {
+    color: #EBC45D;
+}
+
+.menu {
     display: flex;
-    list-style: none;
     gap: 25px;
 }
 
-.navbar a {
+.menu a {
     text-decoration: none;
-    color: #34465e;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #3685d8;
-}
-
-.hero {
-    min-height: 550px;
-    padding: 80px 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    background: linear-gradient(120deg, #e7f3ff, #ffffff);
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.welcome {
-    color: #3685d8;
-    letter-spacing: 3px;
+    color: #77666B;
     font-size: 14px;
 }
 
-.hero h1 {
-    font-size: 55px;
-    color: #2678ca;
-    margin: 10px 0;
+.menu a:hover {
+    color: #CF7E99;
 }
 
-.hero h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    line-height: 1.8;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 28px;
-    background: #3685d8;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #205fa8;
-}
-
-.profile-circle {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background: #d4eaff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid white;
-    box-shadow: 0 10px 30px #c5dcf5;
-}
-
-.profile-icon {
-    font-size: 110px;
-}
-
-.section {
-    padding: 75px 10%;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 35px;
-    color: #2678ca;
-}
-
-.subtitle {
-    color: #8293a8;
-    margin-bottom: 35px;
-}
-
-.about-card {
-    max-width: 750px;
+/* CONTAINER */
+.container {
+    max-width: 1000px;
     margin: auto;
-    padding: 30px;
-    text-align: left;
-    background: white;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px #dce7f5;
-    line-height: 2.2;
+    padding: 0 35px;
 }
 
-.about-card h3 {
-    color: #2678ca;
-    margin-bottom: 15px;
+/* PROFILE */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 65px 40px;
+    background: #FCEAF0;
+    margin-top: 30px;
+    border-radius: 16px;
 }
 
-.skills {
-    background: #eaf4ff;
+.profile-image {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid white;
+    background: #FFF1C9;
 }
 
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.skill-card {
-    background: white;
-    padding: 30px 15px;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px #dce7f5;
-    transition: 0.3s;
+.tag {
+    color: #C87591;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
-.skill-card:hover {
-    transform: translateY(-8px);
+.profile-text h1 {
+    font-size: 30px;
+    margin: 8px 0;
 }
 
-.skill-card span {
-    font-size: 40px;
+.profile-text h1 span {
+    color: #CF7E99;
 }
 
-.skill-card h3 {
-    color: #2678ca;
-    margin: 12px 0;
+.profile-text h2 {
+    font-size: 19px;
+    color: #C87591;
+    font-weight: 400;
 }
 
-.skill-card p {
+.profile-text p {
     font-size: 14px;
-    color: #718096;
+    color: #796D70;
 }
 
-footer {
-    padding: 25px;
-    background: #2678ca;
-    color: white;
+/* CONTENT */
+.content {
+    padding: 35px 10px;
+    border-bottom: 1px solid #F0E3E5;
+}
+
+.content h2 {
+    font-size: 23px;
+    color: #C87591;
+    margin-bottom: 15px;
+    padding-left: 12px;
     text-align: center;
 }
 
+.content p {
+    font-size: 14px;
+    color: #75686C;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* SKILLS */
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 12px 0;
+    text-align: left;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.skill-item span {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+}
+
+.skill-item h3 {
+    font-size: 16px;
+    color: #51454A;
+    text-align: left;
+}
+
+.skill-item p {
+    color: #8B7C80;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* EXPERIENCE */
+.experience-item {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.year {
+    color: #B18A3B;
+    background: #FFF0BF;
+    padding: 3px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.experience-item h3 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.experience-item p {
+    color: #8B7C80;
+}
+
+/* GOAL */
+.goal {
+    margin: 40px 0;
+    padding: 40px 45px;
+    text-align: center;
+    background: #FFF3CB;
+    border-radius: 16px;
+}
+
+.goal-tag {
+    color: #B18A3B;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.goal h2 {
+    color: #C87591;
+    font-size: 25px;
+    margin: 8px 0 15px;
+}
+
+.goal h3 {
+    font-size: 22px;
+}
+
+.goal h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A17E43;
+    margin: 5px 0 18px;
+}
+
+.goal p {
+    font-size: 14px;
+    line-height: 2;
+    color: #71635B;
+}
+
+.quote {
+    margin-top: 20px;
+    color: #B18A3B;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #F8E2E9;
+    text-align: center;
+    padding: 25px;
+    color: #B76E89;
+}
+
+footer h3 {
+    letter-spacing: 2px;
+}
+
+footer p,
+footer small {
+    font-size: 13px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 
-    .navbar ul {
+    .menu {
         gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .hero {
-        flex-direction: column-reverse;
+    .menu a {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 18px;
+    }
+
+    .profile {
+        flex-direction: column;
         text-align: center;
+        padding: 35px 20px;
+        gap: 20px;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    .profile-image {
+        width: 145px;
+        height: 145px;
+        min-width: 145px;
     }
 
-    .profile-circle {
-        width: 200px;
-        height: 200px;
+    .profile-text h1 {
+        font-size: 24px;
     }
 
-    .skill-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 450px) {
-    .skill-grid {
-        grid-template-columns: 1fr;
+    .goal {
+        padding: 30px 20px;
     }
 }
